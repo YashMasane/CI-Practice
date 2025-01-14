@@ -14,7 +14,7 @@ height = st.number_input("Enter your height (in meters):", min_value=0.0, format
 if st.button("Calculate BMI"):
     if height > 0:
         bmi = calculate_bmi(weight, height)
-        st.success(f"Your BMI is: {bmi}")
+        st.write(f"Your BMI is: {bmi}")
         
         # Interpret BMI
         if bmi < 18.5:
